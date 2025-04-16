@@ -35,7 +35,7 @@ switch ($action) {
         
     case 'home':
         // Verificar si el usuario está autenticado
-        session_start();
+session_start();
         if (!isset($_SESSION['user_id'])) {
             header('Location: index.php?action=login');
             exit;

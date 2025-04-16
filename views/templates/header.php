@@ -1,6 +1,7 @@
 <?php
 // views/templates/header.php
 session_start();
+
 // Obtener el contador de ítems en el carrito
 $cartCount = 0;
 if (isset($_SESSION['user_id'])) {
